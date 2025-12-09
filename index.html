@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Desarrollador Web</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Manifest PWA -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Portafolio profesional de Bryan Muñoz - Desarrollador Web Junior especializado en Vue.js, React, Node.js y desarrollo frontend moderno">
+    <meta name="keywords" content="desarrollador web, frontend, Vue.js, React, Node.js, portafolio, programador, Colombia">
+    <meta name="author" content="Bryan Muñoz">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-dominio.com/">
+    <meta property="og:title" content="Bryan Muñoz - Desarrollador Web">
+    <meta property="og:description" content="Portafolio profesional de desarrollador web especializado en tecnologías modernas">
+    <meta property="og:image" content="https://tu-dominio.com/img/perfil.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tu-dominio.com/">
+    <meta property="twitter:title" content="Bryan Muñoz - Desarrollador Web">
+    <meta property="twitter:description" content="Portafolio profesional de desarrollador web especializado en tecnologías modernas">
+    <meta property="twitter:image" content="https://tu-dominio.com/img/perfil.jpg">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0d6efd">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio" aria-label="Inicio del portafolio">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio" aria-label="Ir a inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfil" aria-label="Ver perfil">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades" aria-label="Ver habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia" aria-label="Ver experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion" aria-label="Ver educación">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos" aria-label="Ver proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" aria-label="Contactar">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" id="theme-toggle" aria-label="Cambiar tema">
+                            <i class="bi bi-moon-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold mb-3">Hola, Soy Bryan Muñoz</h1>
+            <p class="lead mb-4">Desarrollador junior</p>
+            <a href="#proyectos" class="btn btn-primary btn-lg me-2">Ver Proyectos</a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg">Contactar</a>
+        </div>
+    </section>
+
+    <!-- Perfil Section -->
+    <section id="perfil" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre Mí</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src="img/perfil.jpg" alt="Foto de perfil" class="img-fluid rounded-circle profile-img mb-3">
+                    <div class="social-links">
+                        <a href="#" class="btn btn-outline-dark btn-sm me-2"><i class="bi bi-github"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h3 class="mb-3">Desarrollador junior</h3>
+                    <p class="text-muted">
+                        Soy un desarrollador apasionado por crear soluciones web innovadoras y funcionales. 
+                        Con experiencia en el desarrollo de aplicaciones web modernas, me apasiona
+                        crear interfaces intuitivas y experiencias de usuario excepcionales.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h5><i class="bi bi-person-fill text-primary"></i> Información Personal</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Email:</strong> bryan.munoz@email.com</li>
+                                <li><strong>Teléfono:</strong> +57 30245872x</li>
+                                <li><strong>Ubicación:</strong> Pereira, Colombia</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="bi bi-code-slash text-primary"></i> Habilidades</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-primary me-1">HTML/CSS</span>
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                <span class="badge bg-primary me-1">Bootstrap</span>
+                                <span class="badge bg-primary me-1">React</span>
+                                <span class="badge bg-primary me-1">Node.js</span>
+                                <span class="badge bg-primary">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="assets/cv.pdf" class="btn btn-primary mt-3" download>
+                        <i class="bi bi-download"></i> Descargar CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas Section -->
+    <section id="estadisticas" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold mb-2" data-target="15">0</h2>
+                        <p class="mb-0">Proyectos Completados</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold mb-2" data-target="5">0</h2>
+                        <p class="mb-0">Tecnologías Dominadas</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold mb-2" data-target="2">0</h2>
+                        <p class="mb-0">Años de Experiencia</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold mb-2" data-target="10">0</h2>
+                        <p class="mb-0">Clientes Satisfechos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section id="habilidades" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h4 class="mb-3"><i class="bi bi-code-slash text-primary"></i> Frontend</h4>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>HTML5 / CSS3</span>
+                            <span class="text-muted">90%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>JavaScript</span>
+                            <span class="text-muted">85%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Vue.js</span>
+                            <span class="text-muted">80%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" data-width="80" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>React</span>
+                            <span class="text-muted">75%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" data-width="75" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Bootstrap / Tailwind</span>
+                            <span class="text-muted">88%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" data-width="88" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h4 class="mb-3"><i class="bi bi-server text-primary"></i> Backend & Herramientas</h4>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Node.js</span>
+                            <span class="text-muted">70%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" data-width="70" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Git / GitHub</span>
+                            <span class="text-muted">85%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>REST APIs</span>
+                            <span class="text-muted">75%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" data-width="75" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>MongoDB / SQL</span>
+                            <span class="text-muted">65%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" data-width="65" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Diseño Responsive</span>
+                            <span class="text-muted">92%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" data-width="92" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Section -->
+    <section id="experiencia" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Experiencia Laboral</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    
+                    <!-- Experiencia 1 -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h5 class="card-title mb-1">Desarrollador Frontend</h5>
+                                    <h6 class="text-primary">Empresa XYZ</h6>
+                                </div>
+                                <span class="badge bg-secondary">2024 - 2025</span>
+                            </div>
+                            <p class="card-text text-muted">
+                                Desarrollo de interfaces web responsive utilizando React y Bootstrap. 
+                                Colaboración con equipos backend para integrar APIs REST. 
+                                Mejora del rendimiento de aplicaciones web en un 40%.
+                            </p>
+                            <div>
+                                <span class="badge bg-light text-dark me-1">React</span>
+                                <span class="badge bg-light text-dark me-1">Bootstrap</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experiencia 2 -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h5 class="card-title mb-1">Desarrollador Web Junior</h5>
+                                    <h6 class="text-primary">Grupo de trabajo laboratorio de software</h6>
+                                </div>
+                                <span class="badge bg-secondary">2024 </span>
+                            </div>
+                            <p class="card-text text-muted">
+                                Desarrollador web para un ecomerce tipo amazon, el trabajo se hizo con Vue
+                                con base de datos nodejs, el proyecto partio desde cero, con enfasis en un
+                                desarrollo en equipo por fases, parte de mi trabajo fue parte de la arquitectura
+                                visual y la Ubicación de los elementos interactivos de la pagina.
+                            </p>
+                            <div>
+                                <span class="badge bg-light text-dark me-1">HTML/CSS</span>
+                                <span class="badge bg-light text-dark me-1">vue</span>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experiencia 3 -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h5 class="card-title mb-1">Practicante de Desarrollo Web</h5>
+                                    <h6 class="text-primary">Startup Digital</h6>
+                                </div>
+                                <span class="badge bg-secondary">2024 - 2025</span>
+                            </div>
+                            <p class="card-text text-muted">
+                                Asistencia en el desarrollo de aplicaciones web. 
+                                Aprendizaje de mejores prácticas de desarrollo. 
+                                Creación de prototipos y mockups.
+                            </p>
+                            <div>
+                                <span class="badge bg-light text-dark me-1">HTML</span>
+                                <span class="badge bg-light text-dark me-1">CSS</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación Section -->
+    <section id="educacion" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Educación & Certificaciones</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h5 class="card-title mb-1"><i class="bi bi-mortarboard-fill text-primary"></i> Ingeniería de Sistemas</h5>
+                                    <h6 class="text-primary">Universidad Tecnológica de Pereira</h6>
+                                </div>
+                                <span class="badge bg-secondary">En curso</span>
+                            </div>
+                            <p class="card-text text-muted mb-0">
+                                Formación en desarrollo de software, arquitectura de sistemas y tecnologías web modernas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h5 class="card-title mb-1"><i class="bi bi-award-fill text-primary"></i> Certificación en Desarrollo Web</h5>
+                                    <h6 class="text-primary">Plataforma de Cursos Online</h6>
+                                </div>
+                                <span class="badge bg-success">Completado</span>
+                            </div>
+                            <p class="card-text text-muted mb-0">
+                                Certificación en tecnologías frontend y backend modernas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Proyectos Destacados</h2>
+            
+            <!-- Filtros de Proyectos -->
+            <div class="text-center mb-4">
+                <button class="btn btn-outline-primary filter-btn active" data-filter="all">
+                    Todos
+                </button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="vue">
+                    Vue.js
+                </button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="react">
+                    React
+                </button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="javascript">
+                    JavaScript
+                </button>
+            </div>
+            
+            <div class="row g-4" id="proyectos-container">
+                
+                <!-- Proyecto 1 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="vue">
+                    <div class="card h-100 shadow-sm project-card">
+                        <img src="img/proyectos/proyecto1.jpg" class="card-img-top" alt="E-Commerce Platform">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Platform</h5>
+                            <p class="card-text text-muted">
+                                Plataforma de comercio electrónico completa con carrito de compras, 
+                                sistema de pagos y panel de administración.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark me-1">vue</span>
+                                <span class="badge bg-info text-dark me-1">Node.js</span>
+                                <span class="badge bg-info text-dark">MongoDB</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary" aria-label="Ver código en GitHub">
+                                    <i class="bi bi-github"></i> Código
+                                </a>
+                                <a href="http://localhost:5173" target="_blank" class="btn btn-sm btn-primary" aria-label="Ver demo del proyecto">
+                                    <i class="bi bi-eye"></i> Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="vue">
+                    <div class="card h-100 shadow-sm project-card">
+                        <img src="img/proyectos/proyecto2.jpg" class="card-img-top" alt="Task Manager App">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Manager App</h5>
+                            <p class="card-text text-muted">
+                                Aplicación de gestión de tareas con funcionalidades de colaboración 
+                                en tiempo real y notificaciones.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark me-1">Vue.js</span>
+                                <span class="badge bg-info text-dark me-1">Firebase</span>
+                                <span class="badge bg-info text-dark">Bootstrap</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary" aria-label="Ver código en GitHub">
+                                    <i class="bi bi-github"></i> Código
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary" aria-label="Ver demo del proyecto">
+                                    <i class="bi bi-eye"></i> Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="javascript">
+                    <div class="card h-100 shadow-sm project-card">
+                        <img src="img/proyectos/proyecto3.jpg" class="card-img-top" alt="Weather Dashboard">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather Dashboard</h5>
+                            <p class="card-text text-muted">
+                                Dashboard interactivo del clima con gráficos y pronósticos 
+                                utilizando APIs externas.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark me-1">JavaScript</span>
+                                <span class="badge bg-info text-dark me-1">Chart.js</span>
+                                <span class="badge bg-info text-dark">API REST</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary" aria-label="Ver código en GitHub">
+                                    <i class="bi bi-github"></i> Código
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary" aria-label="Ver demo del proyecto">
+                                    <i class="bi bi-eye"></i> Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contáctame</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0 text-center">
+                            <div class="contact-info">
+                                <i class="bi bi-envelope-fill text-primary fs-1 mb-3"></i>
+                                <h5>Email</h5>
+                                <p class="text-muted mb-0">bryan.munoz@email.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-md-0 text-center">
+                            <div class="contact-info">
+                                <i class="bi bi-telephone-fill text-primary fs-1 mb-3"></i>
+                                <h5>Teléfono</h5>
+                                <p class="text-muted mb-0">+57 30245872x</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="contact-info">
+                                <i class="bi bi-geo-alt-fill text-primary fs-1 mb-3"></i>
+                                <h5>Ubicación</h5>
+                                <p class="text-muted mb-0">Pereira, Colombia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <form id="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nombre" class="form-label">Nombre <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required aria-required="true">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" required aria-required="true">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="asunto" name="asunto" required aria-required="true">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div id="form-message" class="alert d-none" role="alert"></div>
+                        <button type="submit" class="btn btn-primary w-100" id="submit-btn">
+                            <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+                            <i class="bi bi-send"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="bi bi-github fs-4"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-envelope fs-4"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
